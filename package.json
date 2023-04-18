@@ -1,0 +1,21 @@
+{
+  "name": "typescript-language-server-nix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:olebedev/typescript-language-server.nix.git",
+  "author": "Oleg Lebedev <oleg@lebedev.au>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.0.4",
+    "typescript-language-server": "^3.3.2"
+  },
+  "js2nix": {
+    "overlay": {
+      "typescript-language-server": {
+        "addDependencies": [
+          "typescript"
+        ]
+      }
+    }
+  }
+}
